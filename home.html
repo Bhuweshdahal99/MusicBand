@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alan Walker</title>
+    <link rel="stylesheet" href="csss/style.css" />
+    <script
+      src="https://kit.fontawesome.com/50540d44b0.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .heroDetails h1 {
+        font-size: 100px;
+        padding-bottom: 15px;
+      }
+      .heroDetails h2 {
+        font-size: 40px;
+        padding-bottom: 20px;
+      }
+      .heroDetails p {
+        font-size: larger;
+        padding-bottom: 10px;
+      }
+      .heroDetails .socialIcons {
+        height: 5%;
+        width: fit-content;
+        padding: 10px;
+      }
+      .socialIcons a{
+        margin: 5px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #06eea0;
+      }
+      .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .tourDbtn {
+        background-color: rgba(255, 255, 255, 0);
+        padding: 10px;
+        border: 2px solid #06eea0;
+        border-radius: 15px;
+        transition: all 1.3s ease;
+      }
+      .tourDbtn:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 10px white;
+      }
+      .expbtn {
+        background-color: rgba(255, 255, 255, 0);
+        padding: 10px;
+        border: 2px solid #06eea0;
+        border-radius: 15px;
+        transition: all 1s ease-out;
+      }
+      .expbtn:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 0 10px white;
+      }
+      .explorebtns a {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="photos/logo2-removebg-preview.png" alt="" />
+      </div>
+      <div class="navlinks">
+        <a href="home.html" style="color: #06eea0">Home</a>
+        <a href="about.html">About</a>
+        <a href="tour.html">Tour</a>
+        <a href="album.html">Album</a>
+        <a href="signup.html">Sign up</a>
+      </div>
+    </nav>
+
+    <section class="herosection">
+      <div class="heroDetails">
+        <h1>Alan Walker</h1>
+        <h2>I am Music artist</h2>
+        <p>Follow me on social medias :</p>
+        <div class="socialIcons">
+          <a href="https://www.youtube.com/channel/UCJrOtniJ0-NWz37R30urifQ"
+            ><i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UCJrOtniJ0-NWz37R30urifQ">
+           <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff"></i></a>
+          <a href="https://www.youtube.com/channel/UCJrOtniJ0-NWz37R30urifQ">
+          <i class="fa-brands fa-tiktok fa-2xl" style="color: #ffffff"></i></a>
+          <a href="https://www.youtube.com/channel/UCJrOtniJ0-NWz37R30urifQ">
+          <i class="fa-brands fa-x-twitter fa-2xl" style="color: #ffffff"></i></a>
+          <a href="https://www.youtube.com/channel/UCJrOtniJ0-NWz37R30urifQ"
+            ><i class="fa-brands fa-spotify fa-2xl" style="color: #ffffff"></i></a>
+        </div>
+      </div>
+      <div class="heroImage">
+        <div class="heroimgbox">
+          <img src="photos/bgimage.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="latestReleaseBox">
+      <div class="details">
+        <h1>LATEST RELEASE</h1>
+        <p>
+          "Ethereal Dreams" - A journey through ambient soundscapes and pulsing
+          rhythms that define the essence of modern electronic music
+        </p>
+        <a href="album.html">Listen now -></a>
+        <div class="explorebtns">
+          <button class="expbtn">
+            <a href="album.html">Explore Albums</a>
+          </button>
+          <button class="tourDbtn"><a href="tour.html">Tour Dates</a></button>
+        </div>
+      </div>
+      <div class="image_music">
+        <div class="imgbox">
+          <img src="photos/latest_music.jpg" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
