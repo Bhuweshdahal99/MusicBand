@@ -7,8 +7,79 @@
     <link rel="stylesheet" href="csss/style.css" />
     <style>
       .bio_section {
-        margin-top: 70px;
-        height: 100vh;
+        margin-top: 4.4rem;
+      }
+
+      .bio_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .maincontainer {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container1,
+      .container2 {
+        display: flex;
+        width: 80%;
+        padding: 30px;
+        flex-direction: row;
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(30px);
+        flex-wrap: wrap;
+      }
+      .imgpart1 {
+        width: 50%;
+        height: 100%;
+        padding: 20px;
+      }
+      .imgpart2 {
+        width: 50%;
+        height: 100%;
+        padding: 20px;
+      }
+      .imgpart1,
+      .imgpart2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .imgbox {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .datasbox {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+      }
+      .datasbox div {
+        width: 300px;
+        height: 150px;
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(30px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+     .maincontainer h1{
+        font-size: 2.3rem;
+        text-align: center;
+      }
+      .datasbox h1{
+        color: #06eea0;
       }
     </style>
   </head>
@@ -22,11 +93,109 @@
         <a href="about.html" style="color: #06eea0">About</a>
         <a href="tour.html">Tour</a>
         <a href="album.html">Album</a>
-        <button>Sign up</button>
+
       </div>
     </nav>
     <section class="bio_section">
-      <p>About me</p>
+      <div style="text-align: center; margin-bottom: 20px">
+        <h1 style="font-size: 50px; padding: 15px">ABOUT ME</h1>
+        <p>The story behind the ethereal sounds and digital dreams</p>
+      </div>
+      <div class="maincontainer">
+        <div class="container1">
+          <div class="imgpart1">
+            <div class="imgbox">
+              <img src="photos/image.png" alt="" />
+            </div>
+          </div>
+          <div class="details1">
+            <h1> Early Life</h1>
+            <br />
+            <p>Full Name: Alan Olav Walker</p>
+            <br />
+            <p>Born: August 24, 1997, in Northampton, England</p>
+            <br />
+            <p>Raised in: Bergen, Norway</p>
+            <br />
+            <p>
+              Background: He has a British father and a Norwegian mother.
+              Despite not having formal music training, Alan was always
+              interested in computers, programming, and graphic design.
+            </p>
+            <br>
+            <hr />
+            <h1 style="margin: 20px 0"> Start in Music</h1>
+            <p>
+              In his teens, Walker taught himself music production by watching
+              YouTube tutorials and experimenting with software like FL Studio.
+            </p>
+            <br />
+            <p>
+              He was inspired by artists like Hans Zimmer, Ahrix, and David
+              Whistle.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="container2">
+          <div class="details2">
+            <h1> Breakthrough with "Fade"</h1>
+            <br />
+            <p>
+              In 2014, Alan released the instrumental track "Fade" on YouTube
+              and SoundCloud.
+            </p>
+            <br />
+            <p>
+              The song quickly gained popularity in the EDM community due to its
+              melodic and emotional style.
+            </p>
+            <br />
+            <p>
+              "Fade" later evolved into "Faded" with vocals by Iselin Solheim,
+              released in 2015.
+            </p>
+            <br />
+            <hr />
+            <br>
+            <h1> Massive Global Success</h1>
+            <br />
+            <p>
+              "Faded" became a global hit: Over 3.7 billion views on YouTube
+              Certified multi-platinum in over 10 countries Became an anthem for
+              his signature sound: atmospheric, emotional EDM
+            </p>
+          </div>
+          <div class="imgpart2">
+            <div class="imgbox">
+              <img src="photos/clearimg.webp" />
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+      </div>
     </section>
+    <div class="datasbox">
+      <div>
+        <h1>5</h1>
+        <p>Albums Released</p>
+      </div>
+      <div>
+        <h1>26M</h1>
+        <p>Monthly Listeners</p>
+      </div>
+      <div>
+        <h1>200+</h1>
+        <p>Cities Performed</p>
+      </div>
+      <div>
+        <h1>115M</h1>
+        <p>Listeners WorldWide</p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
   </body>
 </html>
