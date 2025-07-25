@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alan Walker</title>
+    <link rel="stylesheet" href="csss/style.css" />
+    <script src="https://kit.fontawesome.com/50540d44b0.js" crossorigin="anonymous"></script>
+    <style>
+
+      .herosection {
+        display: flex;
+        width: 100%;
+        min-height: 100vh;
+        margin-top: 5rem;
+      }
+      
+      .heroDetails, 
+      .heroImage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .heroDetails {
+        width: 50%;
+        flex-direction: column;
+        padding: 2rem;
+      }
+      
+      .heroImage {
+        width: 50%;
+      }
+      
+      .heroimgbox {
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: blue;
+      }
+      
+      .heroimgbox img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .heroDetails h1 {
+        font-size: 100px;
+        padding-bottom: 0.9rem;
+      }
+      
+      .heroDetails h2 {
+        font-size: 2.6rem;
+        padding-bottom: 2.4rem;
+      }
+      
+      .heroDetails p {
+        font-size: larger;
+        padding-bottom: 0.7rem;
+      }
+      
+      .socialIcons {
+        padding: 0.7rem;
+      }
+      
+      .socialIcons i {
+        margin: 0.3rem;
+        transition: all 0.3s ease;
+        font-size: 2.5rem;
+      }
+      
+      .socialIcons i:hover {
+        transform: scale(1.3);
+      }
+      
+      .latestReleaseBox {
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(30px);
+        border-radius: 15px;
+        margin: 2rem;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .latestReleaseBox .details {
+        width: 50%;
+        padding: 30px;
+      }
+      
+      .image_music .imgbox {
+        height: 70%;
+        width: 60%;
+      }
+      
+      .latestReleaseBox .image_music {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .imgbox img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      
+      .details a {
+        text-decoration: none;
+        color: #06eea0;
+      }
+      
+      .tourDbtn, 
+      .expbtn {
+        background-color: rgba(255, 255, 255, 0);
+        padding: 0.7rem;
+        border: 2px solid #06eea0;
+        border-radius: 15px;
+        transition: all 0.3s ease;
+        color: white;
+        cursor: pointer;
+        margin-right: 1rem;
+        margin-top: 1rem;
+      }
+      
+      .tourDbtn:hover, 
+      .expbtn:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 10px white;
+      }
+      
+      .explorebtns {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      @media (max-width: 768px) {
+        .herosection {
+          flex-direction: column-reverse;
+          /* margin-top: 5rem; */
+          align-items: center;
+        }
+        
+        .heroDetails, 
+        .heroImage {
+          width: 100%
+        }
+        
+        .heroDetails {
+          padding: 1rem;
+          text-align: center;
+        }
+        
+        .heroDetails h1 {
+          font-size: 50px;
+        }
+        
+        .heroDetails h2 {
+          font-size: 1.8rem;
+          padding-bottom: 1.5rem;
+        }
+        
+        .heroimgbox {
+          height: 300px;
+          width: 300px;
+          margin-top: 2rem;
+        }
+        
+        .latestReleaseBox {
+          flex-direction: column-reverse;
+          margin: 1rem;
+          align-items: center;
+        }
+        
+        .latestReleaseBox .details, 
+        .latestReleaseBox .image_music {
+          width: 100%;
+        }
+        .latestReleaseBox .explorebtns{
+          width: 100%;
+          flex-direction: column;
+          justify-items: center;
+          align-items: center;
+        }
+        
+         .latestReleaseBox .details{
+          width: 70%;
+        }
+        .image_music .imgbox {
+          width: 80%;
+          margin: 1.5rem 0;
+        }
+        
+        .explorebtns {
+          justify-content: center;
+          
+        }
+        .expbtn,.tourDbtn{
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="photos/logo2-removebg-preview.png" alt="Alan Walker Logo" />
+      </div>
+      <div class="navlinks">
+        <a href="home.html" style="color: #06eea0">Home</a>
+        <a href="about.html">About</a>
+        <a href="tour.html">Tour</a>
+        <a href="album.html">Album</a>
+      </div>
+    </nav>
+
+    <section class="herosection">
+      <div class="heroDetails">
+        <h1>Alan Walker</h1>
+        <h2>I am Music artist</h2>
+        <p>Follow me on social medias :</p>
+        <div class="socialIcons">
+          <a href="https://www.youtube.com/channel/UCJrOtniJ0-NWz37R30urifQ"
+            ><i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UCJrOtniJ0-NWz37R30urifQ">
+            <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UCJrOtniJ0-NWz37R30urifQ">
+            <i class="fa-brands fa-tiktok fa-2xl" style="color: #ffffff"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UCJrOtniJ0-NWz37R30urifQ">
+            <i class="fa-brands fa-x-twitter fa-2xl" style="color: #ffffff"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UCJrOtniJ0-NWz37R30urifQ"
+            ><i class="fa-brands fa-spotify fa-2xl" style="color: #ffffff"></i
+          ></a>
+        </div>
+      </div>
+      <div class="heroImage">
+        <div class="heroimgbox">
+          <img src="photos/bgimage.jpg" alt="Alan Walker" />
+        </div>
+      </div>
+    </section>
+
+    <section class="latestReleaseBox">
+      <div class="details">
+        <h1>LATEST RELEASE</h1>
+        <p>
+          "LILY" - A journey through ambient soundscapes and pulsing rhythms
+          that define the essence of modern electronic music
+        </p>
+        <a href="album.html">Listen now -></a>
+        <div class="explorebtns">
+          <button class="expbtn">
+            <a href="album.html">Explore Albums</a>
+          </button>
+          <button class="tourDbtn"><a href="tour.html">Tour Dates</a></button>
+        </div>
+      </div>
+      <div class="image_music">
+        <div class="imgbox">
+          <img src="photos/latest_music.jpg" alt="Latest Release" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
