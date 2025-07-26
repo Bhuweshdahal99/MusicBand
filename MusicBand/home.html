@@ -120,16 +120,18 @@
         border: 2px solid #06eea0;
         border-radius: 15px;
         transition: all 0.3s ease;
-        color: white;
         cursor: pointer;
         margin-right: 1rem;
         margin-top: 1rem;
       }
-
+      .tourDbtn a,
+      .expbtn a {
+        color: white;
+      }
       .tourDbtn:hover,
       .expbtn:hover {
         transform: translateY(-5px);
-        box-shadow: 0 0 10px white;
+        box-shadow: 0 0 17px #06eea0;
       }
 
       .explorebtns {
@@ -140,16 +142,11 @@
       @media (max-width: 768px) {
         .herosection {
           flex-direction: column-reverse;
-<<<<<<< HEAD
-          /* margin-top: 5rem; */
-=======
-           margin-top: -2rem; 
->>>>>>> a3c5b2dcbd245ef9b16733f23d144905aade3c9c
           align-items: center;
-          margin-top: -1.5rem;
+          justify-content: center;
+          width: 100%;
         }
 
-        .heroDetails,
         .heroImage {
           width: 100%;
         }
@@ -160,7 +157,7 @@
         }
 
         .heroDetails h1 {
-          font-size: 50px;
+          font-size: 3rem;
         }
 
         .heroDetails h2 {
@@ -168,6 +165,14 @@
           padding-bottom: 1.5rem;
         }
 
+        .socialIcons {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+        }
+        .socialIcons i {
+          font-size: 1.5rem;
+        }
         .heroimgbox {
           height: 300px;
           width: 300px;
