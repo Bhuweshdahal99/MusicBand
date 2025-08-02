@@ -6,8 +6,15 @@
     <title>Alan Walker</title>
     <link rel="stylesheet" href="csss/style.css" />
     <style>
+      p {
+        color: #080808;
+      }
       .album_section {
         margin-top: 5rem;
+      }
+      .album_section h3{
+        color: #24b980;
+        text-align: center;
       }
       header {
         text-align: center;
@@ -26,22 +33,23 @@
 
       h2 {
         margin-bottom: 1rem;
-        border-left: 5px solid #00f0ff;
+        border-left: 5px solid #24b980;
         padding-left: 1rem;
         font-size: 1.8rem;
       }
 
       .card-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 1.5rem;
       }
 
       .card {
-        background: #1c1c1c;
+        height: 320px;
+        background: #f1f1f1;
         border-radius: 10px;
         overflow: hidden;
-        box-shadow: 0 4px 10px rgba(0, 240, 255, 0.2);
+        box-shadow: 0 0 20px rgba(08, 40, 55, 0.4);
         transition: transform 0.3s;
       }
 
@@ -53,6 +61,10 @@
         width: 100%;
         height: 180px;
         object-fit: cover;
+        transition: all 0.8s ease;
+      }
+      .card img:hover{
+        transform: scale(1.06);
       }
 
       .card-content {
@@ -67,7 +79,7 @@
       audio {
         width: 100%;
         outline: none;
-        background-color: #1c1c1c;
+        background-color: #f1f1f1;
         color: aliceblue;
       }
     </style>
@@ -75,7 +87,9 @@
   <body>
     <nav class="navbar">
       <div class="logo">
-        <img src="photos/logo2-removebg-preview.png" alt="" />
+         <a href="home.html">
+          <img src="photos/logo2-removebg-preview.png" alt="Alan Walker Logo"
+        /></a>
       </div>
       <div class="navlinks">
         <a href="home.html">Home</a>
@@ -86,7 +100,7 @@
     </nav>
     <section class="album_section">
       <section>
-        <h2>Latest Release</h2>
+        <h2>Album</h2>
         <div class="card-container">
           <div class="card">
             <img
@@ -151,12 +165,6 @@
               </audio>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Album</h2>
-        <div class="card-container">
           <div class="card">
             <img src="photos/all-falls-down.png" alt="All Falls Down Cover" />
             <div class="card-content">
@@ -219,5 +227,38 @@
         </div>
       </section>
     </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tour.html">Tour</a></li>
+            <li><a href="album.html">Album</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>Email: support@alanwalker.com</p>
+          <p>Phone: +1 (800) 555-ALAN</p>
+          <p>Location: EDM Street, Norway</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Alan Walker. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="play.js"></script>
   </body>
 </html>

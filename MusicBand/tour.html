@@ -7,12 +7,21 @@
 
     <link rel="stylesheet" href="csss/style.css" />
     <style>
+      p {
+        color: #080808;
+      }
+      span {
+        color: #080808;
+      }
       .tour_section {
+        width: 100%;
         margin-top: 5rem;
       }
+
       .container {
         padding: 20px;
       }
+
       .tour-dates {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -20,17 +29,15 @@
       }
 
       .event-card {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: white;
         border-radius: 15px;
         overflow: hidden;
+        box-shadow: 0 0 10px rgba(55, 55, 55, 0.5);
         transition: all 0.3s ease;
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
       }
 
       .event-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 30px rgba(0, 209, 255, 0.2);
+        transform: scaleX(1.03);
       }
 
       .event-image {
@@ -47,6 +54,7 @@
         font-weight: 600;
         margin-bottom: 0.5rem;
         font-size: 1.1rem;
+        color: #080808;
       }
 
       .event-title {
@@ -59,11 +67,10 @@
         align-items: center;
         gap: 0.5rem;
         margin-bottom: 1.5rem;
-        color: rgba(255, 255, 255, 0.7);
       }
 
       .buy-btn {
-        border: none;
+        border: 3px solid #24b980;
         padding: 0.8rem 1.5rem;
         border-radius: 30px;
         font-weight: 600;
@@ -73,22 +80,31 @@
         font-size: 0.9rem;
         letter-spacing: 1px;
         width: 100%;
+        background-color: white;
       }
 
       .buy-btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 0px 20px #06eea0;
+        transform: rotate(3deg);
+        background-color: #24b980;
+        color: white;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        font-weight: 600;
       }
+
       .heading_tour {
         font-size: 3rem;
         text-align: center;
         margin: 2rem;
       }
+
       .gallery h1 {
         font-size: 3rem;
         text-align: center;
         margin: 1.2rem 0;
       }
+
       .gallery-item {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -96,19 +112,76 @@
         margin-bottom: 2rem;
         padding: 1.5rem;
       }
+
       .gallery-item img {
         border-radius: 1.5rem;
         height: 18rem;
+        object-fit: cover;
+        width: 100%;
       }
       @media (max-width: 768px) {
-        .heading_tour {
+        html {
+          overflow-x: hidden;
+        }
+        .tour_section {
+          place-items: center;
+        }
+        .heading_tour,
+        .gallery h1 {
           font-size: 2rem;
         }
+
+        .event-details {
+          padding: 1.2rem;
+        }
+
+        .event-title {
+          font-size: 1.2rem;
+        }
+
+        .event-date {
+          font-size: 1rem;
+        }
+
+        .gallery-item {
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+          padding: 1rem;
+        }
+
+        .event-image {
+          height: 160px;
+        }
+
+        .buy-btn {
+          font-size: 0.8rem;
+          padding: 0.6rem 1rem;
+        }
+      }
+      @media (max-width: 480px) {
         .tour_section {
           width: 100%;
         }
-        .gallery h1{
-            font-size: 2rem;
+
+        .gallery-item {
+          grid-template-columns: 1fr;
+        }
+
+        .heading_tour,
+        .gallery h1 {
+          font-size: 1.5rem;
+        }
+
+        .event-card {
+          margin: 0 auto;
+          width: 80%;
+        }
+
+        .event-details {
+          padding: 1rem;
+        }
+
+        .buy-btn {
+          font-size: 0.75rem;
         }
       }
     </style>
@@ -116,7 +189,9 @@
   <body>
     <nav class="navbar">
       <div class="logo">
-        <img src="photos/logo2-removebg-preview.png" alt="" />
+         <a href="home.html">
+          <img src="photos/logo2-removebg-preview.png" alt="Alan Walker Logo"
+        /></a>
       </div>
       <div class="navlinks">
         <a href="home.html">Home</a>
@@ -171,7 +246,7 @@
               <div class="event-date">November 18, 2023</div>
               <h3 class="event-title">Walkerverse Tour</h3>
               <div class="event-location">
-                <span>Madison Square Garden, New York, USA</span>
+                <span>Madison Square Garden, New York</span>
               </div>
               <button class="buy-btn">Buy Tickets</button>
             </div>
@@ -203,7 +278,7 @@
               <div class="event-date">January 12, 2024</div>
               <h3 class="event-title">Walkerverse Tour</h3>
               <div class="event-location">
-                <span>Ziggo Dome, Amsterdam, Netherlands</span>
+                <span>Ziggo Dome, Amsterdam</span>
               </div>
               <button class="buy-btn">Buy Tickets</button>
             </div>
@@ -219,7 +294,7 @@
               <div class="event-date">February 8, 2024</div>
               <h3 class="event-title">Walkerverse Tour</h3>
               <div class="event-location">
-                <span>Mercedes-Benz Arena, Berlin, Germany</span>
+                <span>Mercedes-Benz Arena, Berlin</span>
               </div>
               <button class="buy-btn">Buy Tickets</button>
             </div>
@@ -237,9 +312,39 @@
           <img src="photos/gallery/gallery6.avif" />
           <img src="photos/gallery/gallery7.avif" />
           <img src="photos/gallery/gallery8.avif" />
-       
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tour.html">Tour</a></li>
+            <li><a href="album.html">Album</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>Email: support@alanwalker.com</p>
+          <p>Phone: +1 (800) 555-ALAN</p>
+          <p>Location: EDM Street, Norway</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Alan Walker. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
