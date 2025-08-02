@@ -16,13 +16,6 @@ h2,h3 {
 body {
   font-family: "Poppins", sans-serif;
   color: aliceblue;
-  /* background: linear-gradient(
-    to bottom right,
-    #06eea0 1%,
-    rgb(0, 110, 48),
-    rgb(0, 0, 0),
-    #000000 100%
-  ); */
 }
 .navbar {
   display: flex;
